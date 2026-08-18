@@ -1,0 +1,4 @@
+Generative AI (GenAI) Notes
+What is Generative AI?
+
+Generative AI is a type of Artificial Intelligence that can create new content instead of just analyzing existing data. It generates text, images, code, music, videos, and more based on the data it was trained on.
