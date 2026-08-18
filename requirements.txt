@@ -1,6 +1,6 @@
+streamlit
 langchain
 langchain-community
-langchain-google-genai
 langchain-mistralai
 langchain-huggingface
 langchain-text-splitters
