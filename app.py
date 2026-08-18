@@ -72,11 +72,6 @@ if uploaded_file is not None:
 
         with st.spinner("Creating vector database..."):
 
-            # Reset old database
-            if os.path.exists("chroma_db"):
-                shutil.rmtree("chroma_db")
-
-
             # Save uploaded PDF temporarily
             with tempfile.NamedTemporaryFile(
                 delete=False,
@@ -111,8 +106,7 @@ if uploaded_file is not None:
             # Create Chroma vector database
             vectorstore = Chroma.from_documents(
                 documents=chunks,
-                embedding=embedding_model,
-                persist_directory="chroma_db"
+                embedding=embedding_model
             )
 
 
