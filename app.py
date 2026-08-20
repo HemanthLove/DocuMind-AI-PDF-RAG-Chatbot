@@ -142,7 +142,9 @@ else:
 
 st.header("Step 3: Ask Questions")
 
-
+if st.button("🗑️ Clear Chat"):
+    st.session_state.messages = []
+    st.rerun()
 if not st.session_state.database_created:
 
     st.info("Create the vector database first to start chatting.")
